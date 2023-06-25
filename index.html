@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>WebSite Responsive MtbBike</title>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+        <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+              </ul>
+            </div>
+         </nav>
+         <div class="content-section">
+            <h1>Power Deviate Cycling/MTB</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="button">
+                <a href="">Read More</a>
+                <a href="">Discover More</a>
+
+            </div>
+         </div>
+    </div>
+    <script type="text/javascript">
+        const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+        const navmenu = document.getElementsByClassName("nav-menu")[0]
+        toggleBtn.addEventListener("click", () =>{
+            navmenu.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
